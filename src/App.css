@@ -1,0 +1,119 @@
+*{
+  font-family: monospace;
+  font-weight: 200;
+  text-transform: lowercase;
+  color: whitesmoke;
+}
+
+.Links{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-container{
+  display: flex;
+  width: 75%;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+
+h1{
+  text-align: center;
+}
+
+.flex-centered{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.primary-btn {
+  color: whitesmoke;
+  border-radius: 15px;
+  height: 40px;
+  padding: 1rem;
+  border: 0;
+  background-color: rgba(118, 118, 118, 0.679);
+  cursor: pointer;
+}
+
+.user-section{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-pic{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+textarea {
+  height: 150px;
+}
+
+.post-container{
+ width: 50%;
+ margin: 2% auto;
+ padding: 1rem;
+ box-shadow: 5px 10px #e1e1e16b;
+ border-radius: 10px;
+ background-color: rgba(143, 164, 255, 0.286);
+}
+
+.like-btn{
+  background-color: whitesmoke;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  color: red
+}
+
+body{
+  background-image: url("../public/WhatsApp\ Image\ 2024-02-13\ at\ 12.46.34\ AM.jpeg");
+  background-size: cover;
+}
+
+input, textarea{
+color:black;
+border: 0;
+border-radius: 8px;
+padding: 1rem;
+}
+
+@media only screen and (max-width: 600px){
+  .navbar-container{
+    width: 80%;
+  }
+  .Links{
+    gap: 1rem;
+  }
+  .user-section{
+    gap: 1rem;
+  }
+  .user-section>h3{
+    display: none;
+  }
+
+  .user-section>img{
+    height: 40px;
+    width: 40px;
+  }
+
+
+  .post-container{
+    width: 70%;
+    margin-bottom: 10%;
+  }
+}
