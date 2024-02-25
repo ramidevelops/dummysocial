@@ -16,9 +16,9 @@ export const Login = () => {
     
 
     return(
-        <div className="flex-centered">
-            <h3>Sign in with google to continue</h3>
-            <button onClick={signInWithGoogle} className="primary-btn">Sign in</button>
+        <div className="top-div make-column">
+            <div><h3 className="display-2">Sign in with google to continue</h3></div>
+            <div><button onClick={signInWithGoogle} className="login-btn" >Sign in</button></div>
         </div>
     )
 }

@@ -7,31 +7,43 @@
 
 .Links{
   display: flex;
+  flex-direction: column;
+  font-size: 3rem;
   gap: 2rem;
-  align-items: center;
+  text-decoration: none;
 }
 
 .navbar-container{
   display: flex;
-  width: 75%;
-  margin: 40px auto;
-  justify-content: space-between;
+  padding-right: 20px;
+  width: 20%;
+  height: 50vh;
+  border-right: 1px solid whitesmoke;
+  justify-content: flex-end
 }
 
-h1{
-  text-align: center;
-}
 
-.flex-centered{
-  display: flex;
-  align-items: center;
+.make-column{
   flex-direction: column;
 }
 
 .primary-btn {
   color: whitesmoke;
   border-radius: 15px;
-  height: 40px;
+  text-decoration: none;
+  padding: 1rem;
+  border: 0;
+  background-color: rgba(118, 118, 118, 0.679);
+  cursor: pointer;
+}
+
+.login-btn {
+  color: whitesmoke;
+  font-size: 2vw;
+  font-weight: 800;
+  margin-top: 50%;
+  border-radius: 15px;
+  text-decoration: none;
   padding: 1rem;
   border: 0;
   background-color: rgba(118, 118, 118, 0.679);
@@ -82,8 +94,37 @@ textarea {
 
 body{
   background-image: url("../public/WhatsApp\ Image\ 2024-02-13\ at\ 12.46.34\ AM.jpeg");
-  background-size: cover;
+  background-size: auto;
 }
+
+a{
+text-decoration: none;
+}
+
+.top-div{
+  border-bottom: 1px solid whitesmoke;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.display-1{
+  font-size: 12vw;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: -1rem;
+  margin: 0;
+}
+
+.display-2{
+  font-size: 6vw;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: -0.6rem;
+  margin: 0;
+}
+
 
 input, textarea{
 color:black;
