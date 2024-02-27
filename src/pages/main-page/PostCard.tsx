@@ -71,17 +71,16 @@ export const PostCard = (props: Props) =>{
         getLikes();
     }, []);
 
-    
 
     return (
         <div className="post-container">
             <h2>{post.title}</h2>
             <p>{post.description}</p>
-            <footer>
+            <div>
                 <p>@{post.username}</p>
                 <button onClick={hasUserLiked ? removeLike : addLike} className="like-btn"> {hasUserLiked ?  <>&#x2764;</> : <>&#x2661;</> } </button>
                 {likes !=null && <p>likes: {likes.length}</p>}
-            </footer>
+            </div>
         </div>
     )
 }

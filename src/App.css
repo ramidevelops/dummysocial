@@ -22,6 +22,20 @@
   justify-content: flex-end
 }
 
+.top-navbar{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.Links-top{
+  display: flex;
+  font-size: 3rem;
+  gap: 2rem;
+  text-decoration: none;
+}
+
 
 .make-column{
   flex-direction: column;
@@ -93,8 +107,9 @@ textarea {
 }
 
 body{
-  background-image: url("../public/WhatsApp\ Image\ 2024-02-13\ at\ 12.46.34\ AM.jpeg");
+  background-image: url("../src/background.jpg") ;
   background-size: auto;
+  
 }
 
 a{
@@ -135,11 +150,19 @@ padding: 1rem;
 }
 
 @media only screen and (max-width: 600px){
+
+  
   .navbar-container{
-    width: 80%;
+    width: 40%;
   }
   .Links{
     gap: 1rem;
+  }
+  .top-navbar{
+    align-items: center;
+  }
+  .Links-top{
+    font-size: 1.5rem;
   }
   .user-section{
     gap: 1rem;
@@ -153,9 +176,23 @@ padding: 1rem;
     width: 40px;
   }
 
+  form{
+    width: 75%;
+    margin: 0 auto;
+  }
+
 
   .post-container{
     width: 70%;
     margin-bottom: 10%;
+  }
+
+  .display-1, .display-2{
+    letter-spacing: -0.4rem;
+    font-size: 4rem;
+  }
+
+  .login-btn{
+    font-size: 1.5rem;
   }
 }

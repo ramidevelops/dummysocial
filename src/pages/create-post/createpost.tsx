@@ -3,8 +3,7 @@ import { CreateForm } from "./form"
 
 export const Createpost = () => {
     return(
-        <div>
-            <h1>Post</h1>
+        <div style={{marginTop: "10%"}}>
             <CreateForm />
         </div>
     )

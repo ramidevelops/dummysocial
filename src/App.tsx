@@ -5,6 +5,7 @@ import { Main } from './pages/main-page/Main';
 import { Login } from './pages/Login';
 import { Navbar } from './components/navbar';
 import { Createpost } from './pages/create-post/createpost';
+import { TopNavbar } from './components/TopNavbar';
 
 function App() {
 
@@ -13,12 +14,13 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <TopNavbar />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Createpost" element={<Createpost />} />
         </Routes>
-        <Navbar />
+          <Navbar></Navbar>
       </Router>
 
     </div>

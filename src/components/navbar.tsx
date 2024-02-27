@@ -20,6 +20,7 @@ export const Navbar = () =>{
     }
 
 
+    if(!user){
     return(
         <div className="navbar-container">
             <div className="Links">
@@ -30,13 +31,15 @@ export const Navbar = () =>{
           
                 {user &&   
                 <div className="user-section">
-                 <h3>{user?.displayName}</h3>
-                <img src={user?.photoURL || noProfilePicture} className="profile-pic"/>
+                 <h3>{user['displayName']}</h3>
+                <img src={user['photoURL'] || noProfilePicture} className="profile-pic"/>
                 <button onClick={logout} className="primary-btn">Log out</button>
                 </div>
                  }
 
         </div>
         
-    )
+    )} else {
+        return null
+    }
 }

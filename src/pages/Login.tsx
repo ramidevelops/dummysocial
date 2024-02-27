@@ -13,8 +13,6 @@ export const Login = () => {
     
     };
 
-    
-
     return(
         <div className="top-div make-column">
             <div><h3 className="display-2">Sign in with google to continue</h3></div>

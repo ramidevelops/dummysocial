@@ -33,8 +33,7 @@ export const Main = () => {
 
     return(
         <div>
-        {user ? <div>
-            <h1>Timeline</h1>
+        {user ? <div style={{marginTop: "10%"}}>
             <div>{postsList?.map((post)=> <PostCard post={post}></PostCard>)}</div>
         </div> : <div className='top-div'><h1 className='display-1'>SOUTH TAMPA FORUM</h1></div>}
         </div> 
