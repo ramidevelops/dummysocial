@@ -35,7 +35,7 @@ export const Main = () => {
         <div>
         {user ? <div style={{marginTop: "10%"}}>
             <div>{postsList?.map((post)=> <PostCard post={post}></PostCard>)}</div>
-        </div> : <div className='top-div'><h1 className='display-1'>SOUTH TAMPA FORUM</h1></div>}
+        </div> : <div className='top-div '><h1 className='display-1 animate__fadeInLeft'>SOUTH TAMPA FORUM</h1></div>}
         </div> 
     )
 }

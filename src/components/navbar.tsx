@@ -24,8 +24,8 @@ export const Navbar = () =>{
     return(
         <div className="navbar-container">
             <div className="Links">
-                    <Link to="/">Home</Link>
-                    { !user ? <Link to="/Login" ><b>Login</b></Link> : 
+                    <Link to="/" className="Link">Home</Link>
+                    { !user ? <Link to="/Login" className="Link"><b>Login</b></Link> : 
                     <Link to="/Createpost">Post</Link>}
             </div>
           

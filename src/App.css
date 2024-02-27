@@ -13,6 +13,12 @@
   text-decoration: none;
 }
 
+.Link:hover{
+  animation-name:headShake;
+  animation-duration: 1s;
+  animation-timing-function: 1s;
+}
+
 .navbar-container{
   display: flex;
   padding-right: 20px;
@@ -52,9 +58,12 @@
 }
 
 .login-btn {
+  display: flex;
+  align-items: center;
+  gap:1rem;
   color: whitesmoke;
   font-size: 2vw;
-  font-weight: 800;
+  font-weight: 400;
   margin-top: 50%;
   border-radius: 15px;
   text-decoration: none;
@@ -130,7 +139,9 @@ text-decoration: none;
   font-family: sans-serif;
   letter-spacing: -1rem;
   margin: 0;
-  margin: 0;
+  animation-name:fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: 1s;
 }
 
 .display-2{
@@ -139,6 +150,9 @@ text-decoration: none;
   font-family: sans-serif;
   letter-spacing: -0.6rem;
   margin: 0;
+  animation-name:fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: 1s;
 }
 
 
